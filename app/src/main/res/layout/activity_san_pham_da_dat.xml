@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SanPhamDaDatActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.DienThoaiActivity">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarSanPhamDaDat"
+            android:background="#5DB5C1"
+            app:titleTextColor="#ecfc08"
+            app:title="Danh Sách Sản Phẩm Đã Đặt"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+        </androidx.appcompat.widget.Toolbar>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:textSize="30sp"
+            android:id="@+id/SanPhamDaDatTrongRong"
+            android:layout_gravity="center"
+            android:text="Bạn Chưa có Đặt Hàng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ListView
+            android:id="@+id/listviewsSanPhamDaDat"
+            android:layout_width="match_parent"
+            android:layout_height="450dp">
+
+        </ListView>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng Tiền :"
+                android:textColor="#FD1818"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTongTienSanPhamDaDat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Gía Sẩn Phẩm"
+                android:textColor="#515EDA"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

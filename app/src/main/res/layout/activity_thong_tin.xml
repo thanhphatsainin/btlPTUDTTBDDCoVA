@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarThongTin"
+        android:background="#5DB5C1"
+        app:title="Thông Tin"
+        app:titleTextColor="#ecfc08"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#B0FFCE3B"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Thông Tin Chúng Tôi"
+            android:textColor="#0240f9"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtThognTin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="7dp"
+                android:drawableLeft="@drawable/place"
+                android:gravity="center"
+                android:text="Ðịa Chỉ : 16 Trần Phú, Hà Đông, Hà Nội"
+                android:textColor="#0d0d0d"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <fragment
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/googleMap"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".Activity.ThongTinActivity" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

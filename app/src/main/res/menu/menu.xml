@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/Dollars"
+        android:icon="@drawable/dollars"
+        android:title="$"
+        app:showAsAction="always"/>
+
+    <item android:title=" Search item"
+        android:id="@+id/Search"
+        android:icon="@drawable/search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.widget.SearchView"/>
+
+    <item android:id="@+id/Carts"
+        android:icon="@drawable/cart"
+        android:title="Giỏ Hàng"
+        app:showAsAction="always"/>
+
+</menu>

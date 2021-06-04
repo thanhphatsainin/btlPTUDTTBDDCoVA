@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.namtcshop">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NamTCShop">
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <activity android:name=".Activity.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDuvQhqnFG3BtG2lGSVaeEi2EEHCfJaC2Q" />
+
+        <activity android:name=".Activity.DangNhapActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".Activity.DienThoaiActivity" />
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.LapTopActivity" />
+        <activity android:name=".Activity.LienHeActivity" />
+        <activity android:name=".Activity.ChiTiecSanPhamActivity" />
+        <activity android:name=".Activity.GioHangActivity" />
+        <activity
+            android:name=".Activity.ThongTinActivity"
+            android:label="@string/title_activity_thong_tin" />
+        <activity android:name=".Activity.DangKyActivity" />
+        <activity android:name=".Activity.SanPhamDaDatActivity" />
+    </application>
+
+</manifest>

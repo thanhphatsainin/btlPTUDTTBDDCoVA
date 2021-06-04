@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:weightSum="10"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:id="@+id/imgAnhSanPhamGioHang"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:textColor="#EF1212"
+                android:text="Tên Gio Hàng"
+                android:id="@+id/txtTenSanPhamGioHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#0D5EDF"
+                android:text="Gía Giỏ hàng"
+                android:id="@+id/txtGiaSanPhamGioHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:background="@drawable/borderview_min"
+                    android:focusable="false"
+                    android:textColor="#FBF7F7"
+                    android:textStyle="bold"
+                    android:text="-"
+                    android:id="@+id/btnTruGioHang"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:textColor="#FBF7F7"
+                    android:textStyle="bold"
+                    android:text="1"
+                    android:id="@+id/btnValuesGioHang"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <Button
+                    android:background="@drawable/borderview_plus"
+                    android:layout_marginLeft="10dp"
+                    android:focusable="false"
+                    android:textColor="#FBF7F7"
+                    android:textStyle="bold"
+                    android:text="+"
+                    android:id="@+id/btnCongGioHang"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
